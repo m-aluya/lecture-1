@@ -1,16 +1,18 @@
-class A:
-    def a(self):
-        print("Method from class A")
-
-class B:
-    def b(self):
-        print("Method from class B")
-
-class C(A,B):
-    def c(self):
-        print("Method from class C")
-        
-        
-
-obj = C()
-obj.a()                        
+class OpsA:
+    def interest(self,P):
+        return (P * 3.92 * 10)/100
+    
+    
+class OpsB:
+    def interest(self,P):
+        return (P * 2.92 * 10)/100
+            
+            
+            
+class finalOps(OpsB,OpsA):
+    def x(self):
+        print("This is X")            
+    
+    
+v = finalOps()
+print(v.interest(4000))    
