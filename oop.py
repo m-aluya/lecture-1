@@ -5,21 +5,22 @@ class Person:
     gender = ""
         
         
-    def run(self):
-        print("I can run")  
+    def run(self,name):
+        print(name + "  can run")  
         
-    def sleep():
+    def sleep(self):
         print("Yes i can sleep")    
         
         
-    def read():
+    def read(self):
         print("I can read")
      
-    def eat():
+    def eat(self):
         print("I can eat")
     
-    def drive():
+    def drive(self):
         print("I can drive")
         
 obj = Person()
-obj.run()
+obj.name = "Mason"
+obj.run(obj.name)
